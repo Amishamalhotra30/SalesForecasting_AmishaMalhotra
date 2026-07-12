@@ -157,6 +157,9 @@ streamlit run app.py
 ```
 
 ---
+## Live Demo
+
+**Streamlit App:** https://salesforecastingamishamalhotra-ocst5nxj9nuztsxgbqearh.streamlit.app/
 
 ## 📋 Business Recommendations
 

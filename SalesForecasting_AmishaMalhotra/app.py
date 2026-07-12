@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import plotly.express as px
+from pathlib import Path
 
 from sklearn.ensemble import IsolationForest
 from sklearn.cluster import KMeans
@@ -146,7 +147,10 @@ st.markdown("---")
 @st.cache_data
 def load_data():
 
-    df = pd.read_csv("train.csv")
+    BASE_DIR = Path(__file__).parent
+    data_path = BASE_DIR / "train.csv"
+
+    df = pd.read_csv(data_path)
 
     df["Order Date"] = pd.to_datetime(
         df["Order Date"],
@@ -159,7 +163,7 @@ def load_data():
     )
 
     return df
-
+    
 with st.spinner("Loading sales data..."):
     df = load_data()
 

@@ -158,21 +158,6 @@ streamlit run app.py
 
 ---
 
-## 📷 Dashboard Preview
-
-The dashboard provides:
-
-- Interactive KPI cards
-- Yearly and monthly sales analysis
-- Category and region-wise filtering
-- Sales forecasting
-- Anomaly detection
-- Product demand segmentation
-
-*(You can add screenshots of your deployed dashboard here.)*
-
----
-
 ## 📋 Business Recommendations
 
 - Deploy the XGBoost model for operational sales forecasting.
